@@ -10,17 +10,17 @@ namespace ClinicalTrials.Controllers
 {
     public class ProtocolFormElementOptionsController : ApiController
     {
-         private IClinicalTrialsRepository _repo;
-
-        public ProtocolFormElementOptionssController(IClinicalTrialsRepository repo)
+         
+        private IClinicalTrialsRepository _repo;
+        public ProtocolFormElementOptionsController(IClinicalTrialsRepository repo)
         {
             _repo = repo;
         }
 
-        public IEnumerable<ProtocolFormElementOptoin> Get(int formElementId)
-        {
-            return _repo.GetProtocolFormElementOptionsByGroup(groupId);
-        }
+        //public IEnumerable<ProtocolFormElementOption> Get(int formElementId)
+        //{
+            //return _repo.GetProtocolFormElementOptionsByFormElementId(formElementId);
+        //}
 
     }
 }

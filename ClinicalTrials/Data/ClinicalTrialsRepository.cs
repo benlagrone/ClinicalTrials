@@ -46,6 +46,11 @@ namespace ClinicalTrials.Data
             return _ctx.FormElements.Where(r => r.GroupId == groupId);
         }
 
+        //public IQueryable<ProtocolFormElementOption> GetProtocolFormElementOptionsByFormElementOptionId(int formElementOptionId) 
+        //{
+            //return _ctx.ProtocolFormElementOptions.Where(r => r.FormElementOption_Id == formElementOptionId);
+        //}
+
         public IQueryable<ProtocolFormElementOption> GetProtocolFormElementOptions(int formElementOptionId)
         {
             return _ctx.ProtocolFormElementOptions.Where(r => r.FormElementOption_Id == formElementOptionId);
