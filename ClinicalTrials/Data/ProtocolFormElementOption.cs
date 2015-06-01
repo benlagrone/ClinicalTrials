@@ -7,6 +7,8 @@ namespace ClinicalTrials.Data
 {
     public class ProtocolFormElementOption
     {
+        public int Id { get; set; }
+
         public int Prtotocol_Id { get; set; }
         public int FormElementOption_Id { get; set; }
     }
