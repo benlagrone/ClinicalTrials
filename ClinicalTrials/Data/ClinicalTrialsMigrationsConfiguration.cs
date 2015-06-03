@@ -19,7 +19,7 @@ namespace ClinicalTrials.Data
         {
             base.Seed(context);
 
-//#if DEBUG
+#if DEBUG
 
             //if (context.Groups.Count() == 0) {
             
@@ -1801,7 +1801,7 @@ namespace ClinicalTrials.Data
                     var msg = ex.Message;
                 }
             }
-//#endif
+#endif
         }
     }
 }
