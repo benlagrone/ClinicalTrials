@@ -26,6 +26,16 @@ namespace ClinicalTrials.Data
             return _ctx.Protocols;
         }
 
+        public IQueryable<FormElementOption> GetFormElementOptions()
+        {
+            return _ctx.FormElementOptions;
+        }
+
+        public IQueryable<FormElementOption> GetFormElementOptionsByFormElementId(int formElementId)
+        {
+            return _ctx.FormElementOptions.Where(r => r.FormElementId == formElementId);
+        }
+
         public IQueryable<ProtocolFormElementOption> GetProtocolFormElementOptions()
         {
             return _ctx.ProtocolFormElementOptions;

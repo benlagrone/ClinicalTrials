@@ -26,5 +26,6 @@ namespace ClinicalTrials.Data
         public DbSet<ChildFormElement> ChildFormElements { get; set; }
         public DbSet<Protocol> Protocols { get; set; }
         public DbSet<ProtocolFormElementOption> ProtocolFormElementOptions { get; set; }
+        public DbSet<FormElementOption> FormElementOptions { get; set; }
     }
 }
