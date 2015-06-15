@@ -26,14 +26,14 @@ namespace ClinicalTrials
             config.Routes.MapHttpRoute(
                 name: "FormElementsRoute",
                 routeTemplate: "api/v1/groups/{groupid}/formelement/{id}",
-                defaults: new { controller = "FormElementsController", id = RouteParameter.Optional }
+                defaults: new { controller = "FormElements", id = RouteParameter.Optional }
             );
 
 
             config.Routes.MapHttpRoute(
                 name: "FormElementOptionsRoute",
                 routeTemplate: "api/v1/formelementoption/{id}",
-                defaults: new { controller = "FormElementOptionsController", id = RouteParameter.Optional }
+                defaults: new { controller = "FormElementOptions", id = RouteParameter.Optional }
             );
 
             config.Routes.MapHttpRoute(
@@ -57,7 +57,7 @@ namespace ClinicalTrials
             config.Routes.MapHttpRoute(
                 name: "ProtocolFormElementOptionsByFormElementOption_Id",
                 routeTemplate: "api/v1/protocolformelementoptionsbyid/{id}",
-                defaults: new { controller = "ProtocolFormElementOptionsController", id = RouteParameter.Optional }
+                defaults: new { controller = "ProtocolFormElementOptions", id = RouteParameter.Optional }
                 );
 
 
