@@ -13,7 +13,7 @@ namespace ClinicalTrials.Data
         public string Group { get; set; }
         public DateTime Created { get; set; }
 
-        public virtual int? FormElementId { get; set; }
+        public virtual int FormElementId { get; set; }
         public virtual int? ChildFormElementId { get; set; }
         public virtual ICollection<ChildFormElement> ChildFormElements { get; set; }
         public virtual ICollection<Protocol> Protocols { get; set; }

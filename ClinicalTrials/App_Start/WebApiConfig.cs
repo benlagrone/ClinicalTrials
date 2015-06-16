@@ -32,7 +32,7 @@ namespace ClinicalTrials
 
             config.Routes.MapHttpRoute(
                 name: "FormElementOptionsRoute",
-                routeTemplate: "api/v1/formelementoption/{id}",
+                routeTemplate: "api/v1/formelementoptions/{id}",
                 defaults: new { controller = "FormElementOptions", id = RouteParameter.Optional }
             );
 
