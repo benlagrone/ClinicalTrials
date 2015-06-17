@@ -23,8 +23,8 @@ namespace ClinicalTrials.Controllers
         //not finding action
         public IEnumerable<FormElementOption> Get(int formElementId)
         {
-            return ["foo":"foo"];
-            //return _repo.GetFormElementOptionsByFormElementId(formElementId);
+            var results = _repo.GetFormElementOptions();
+            return results;
         }
     }
 }
