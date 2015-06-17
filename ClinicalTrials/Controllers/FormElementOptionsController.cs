@@ -21,8 +21,7 @@ namespace ClinicalTrials.Controllers
         }
 
         //not finding action
-        [ActionName("GetOptions")]
-        public IEnumerable<FormElementOption> GetOptions(int formElementId)
+        public IEnumerable<FormElementOption> Get(int formElementId)
         {
             return _repo.GetFormElementOptionsByFormElementId(formElementId);
         }
