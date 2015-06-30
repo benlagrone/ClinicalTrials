@@ -10,20 +10,20 @@ using System.Web.Http.Cors;
 namespace ClinicalTrials.Controllers
 {
     [EnableCors(origins: "http://gynonc.azurewebsites.net", headers: "*", methods: "*")]
-    public class FormElementOptionsController : ApiController
+    public class ChildFormElementController : ApiController
     {
-        
+
         private IClinicalTrialsRepository _repo;
 
-        public FormElementOptionsController(IClinicalTrialsRepository repo)
+        public ChildFormElementController(IClinicalTrialsRepository repo)
         {
             _repo = repo;
         }
 
-        public IEnumerable<FormElementOption> Get(int formElementId)
+        public IEnumerable<ChildFormElement> Get(int formElementOptionId)
         {
-            var results = _repo.GetFormElementOptions();
-            var groups = results.Where(t => t.FormElementId == formElementId);
+            var results = _repo.GetChildFormElements();
+            var groups = results.Where(t => t.FormElementOptionId == formElementOptionId);
             return groups;
         }
     }

@@ -93,4 +93,3 @@
 \\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\ClinicalTrials\ClinicalTrials\bin\zh-Hant\System.Spatial.resources.dll
 \\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\ClinicalTrials\ClinicalTrials\obj\Debug\ClinicalTrials.dll
 \\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\ClinicalTrials\ClinicalTrials\obj\Debug\ClinicalTrials.pdb
-\\vmware-host\Shared Folders\Documents\Visual Studio 2013\Projects\ClinicalTrials\ClinicalTrials\obj\Debug\ClinicalTrials.csprojResolveAssemblyReference.cache

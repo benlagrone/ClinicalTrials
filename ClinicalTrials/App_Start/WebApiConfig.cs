@@ -36,6 +36,14 @@ namespace ClinicalTrials
                 defaults: new { controller = "FormElementOptions", id = RouteParameter.Optional }
             );
 
+
+            config.Routes.MapHttpRoute(
+                name: "ChildFormElementRoute",
+                routeTemplate: "api/v1/childformelement/{formElementOptionId}/{id}",
+                defaults: new { controller = "ChildFormElement", id = RouteParameter.Optional }
+            );
+
+
             config.Routes.MapHttpRoute(
                 name: "GroupsRoute",
                 routeTemplate: "api/v1/groups/{groupId}/{id}",

@@ -14,6 +14,7 @@ namespace ClinicalTrials.Data
         IQueryable<Group> GetGroups();
         IQueryable<FormElement> GetFormElementsByGroup(int groupId);
         IQueryable<FormElementOption> GetFormElementOptions();
+        IQueryable<ChildFormElement> GetChildFormElements();
         IQueryable<FormElementOption> GetFormElementOptionsByFormElementId(int formElementId);
         //IQueryable<ProtocolFormElementOption> GetProtocolFormElementOptionsByFormElementId(int formElementId);
         IQueryable<Group> GetGroupsIncludingFormElements();
