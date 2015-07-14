@@ -12,7 +12,7 @@ namespace ClinicalTrials
         public static void Register(HttpConfiguration config)
         {
 
-            //config.EnableCors();
+            config.EnableCors();
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
