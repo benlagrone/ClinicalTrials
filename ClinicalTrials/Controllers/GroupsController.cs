@@ -63,14 +63,14 @@ namespace ClinicalTrials.Controllers
         {
             IQueryable<Group> results;
 
-            if (includeFormElements == true)
-            {
+            //if (includeFormElements == true)
+            //{
                 results = _repo.GetGroupsIncludingFormElements();
-            }
-            else
-            {
-                results = _repo.GetGroups();
-            }
+            //}
+            //else
+            //{
+               // results = _repo.GetGroups();
+            //}
 
 
             var groups = results.Where(t => t.Title == groupName);
