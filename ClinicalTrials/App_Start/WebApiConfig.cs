@@ -13,6 +13,7 @@ namespace ClinicalTrials
         {
 
             config.EnableCors(new EnableCorsAttribute(Properties.Settings.Default.Cors, "", ""));
+            app.UseCors(CorsOptions.AllowAll);
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
