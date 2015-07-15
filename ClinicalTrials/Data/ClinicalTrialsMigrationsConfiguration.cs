@@ -21,7 +21,7 @@ namespace ClinicalTrials.Data
 
 #if DEBUG
 
-            //if (context.Groups.Count() == 0) {
+            if (context.Groups.Count() == 0) {
             
             //Start Group 1
             var group = new Group()
@@ -1751,7 +1751,7 @@ namespace ClinicalTrials.Data
                 FormElements = new List<FormElement>()
             };
             context.Groups.Add(group2);
-            //};
+            };
 
 
             if (context.Topics.Count() == 0)
