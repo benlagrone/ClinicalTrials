@@ -9,8 +9,8 @@ namespace ClinicalTrials.Data
     {
         public int Id { get; set; }
         public string Label { get; set; }
-        public string Value { get; set; }
-        public string Group { get; set; }
+        public string ValueId { get; set; }
+        public string GroupId { get; set; }
         public DateTime Created { get; set; }
 
         public virtual int? FormElementId { get; set; }
