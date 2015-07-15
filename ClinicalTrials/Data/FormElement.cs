@@ -14,8 +14,8 @@ namespace ClinicalTrials.Data
         public string Placeholder { get; set; }
         public string IconClass { get; set; }
         public DateTime Created { get; set; }
-        public virtual int GroupId { get; set; }
-        public virtual int ParentId { get; set; }
+        public virtual int? GroupId { get; set; }
+        public virtual int? ParentId { get; set; }
 
         public virtual ICollection<FormElementOption> FormElementOptions { get; set; } 
     }
