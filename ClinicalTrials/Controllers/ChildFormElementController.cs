@@ -22,7 +22,7 @@ namespace ClinicalTrials.Controllers
 
         public IEnumerable<ChildFormElement> Get(int formElementOptionId)
         {
-            var results = _repo.GetChildFormElements();
+            var results = _repo.GetFormElements();
             var groups = results.Where(t => t.FormElementOptionId == formElementOptionId);
             return groups;
         }
