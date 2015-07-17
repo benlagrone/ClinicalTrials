@@ -20,10 +20,10 @@ namespace ClinicalTrials.Controllers
             _repo = repo;
         }
 
-        public IEnumerable<ChildFormElement> Get(int formElementOptionId)
+        public IEnumerable<FormElement> Get(int formElementOptionId)
         {
             var results = _repo.GetFormElements();
-            var groups = results.Where(t => t.FormElementOptionId == formElementOptionId);
+            var groups = results.Where(t => t.ParentId == formElementOptionId);
             return groups;
         }
     }
