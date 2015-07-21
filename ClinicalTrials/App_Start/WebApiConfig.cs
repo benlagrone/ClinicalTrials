@@ -69,6 +69,12 @@ namespace ClinicalTrials
                 defaults: new { controller = "ProtocolFormElementOptions", id = RouteParameter.Optional }
                 );
 
+            config.Routes.MapHttpRoute(
+                name: "Protocols",
+                routeTemplate: "api/v1/protocols/{protocolId}/{id}"
+                defaults: new {controller = "Protocols", id = RouteParameter.Optional }
+            );
+
 
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
