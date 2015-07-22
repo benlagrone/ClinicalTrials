@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using ClinicalTrials.Data;
 using System.Web.Http.Cors;
 
 namespace ClinicalTrials.Controllers
@@ -11,7 +12,7 @@ namespace ClinicalTrials.Controllers
     [EnableCors(origins: "http://gynonc.azurewebsites.net", headers: "*", methods: "*")]
     public class ProtocolsController : ApiController
     {
-        private IClinicalTrialsRespository _repo;
+        private IClinicalTrialsRepository _repo;
 
         public ProtocolsController(IClinicalTrialsRepository repo) 
         {
