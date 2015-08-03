@@ -19,11 +19,17 @@ namespace ClinicalTrials.Controllers
             _repo = repo;
         }
 
-        public IEnumerable<Protocol> Get(int protocolId, bool includeFullProtocol = false)
+        public IEnumerable<Protocol> Get(int protocolId = 0, bool includeFullProtocol = false)
         {
             var results = _repo.GetProtocols();
-            var single = results.Where(t => t.Id == protocolId);
-            return single;
+            if (protocolId!=0){
+                var singleProtocols = results.Where(t => t.Id == protocolId);  
+                return singleProtocols;  
+            } else {
+                var allProtocols = results;
+                return results;
+            }
+            
         }
     }
 }
