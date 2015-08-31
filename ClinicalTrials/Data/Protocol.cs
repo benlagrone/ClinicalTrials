@@ -46,4 +46,12 @@ namespace ClinicalTrials.Data
         public virtual ICollection<FormElementOption> FormElementOptions { get; set; }
 
     }
+
+    public class ProtocolIdStub
+    {
+        public int Id { get; set; }
+        public string ProtocolId { get; set; }
+        public string NCTNum { get; set; }
+        public string NCTNum_1 { get; set; }
+    }
 }

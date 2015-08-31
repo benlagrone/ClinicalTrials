@@ -72,10 +72,20 @@ namespace ClinicalTrials
             config.Routes.MapHttpRoute(
                 name: "Protocols",
                 routeTemplate: "api/v1/protocols/{protocolId}/{id}",
-                defaults: new {controller = "Protocols", id = RouteParameter.Optional }
+                defaults: new {controller = "Protocols", action = "Get", id = RouteParameter.Optional }
             );
 
+            config.Routes.MapHttpRoute(
+                name: "ProtocolIds",
+                routeTemplate: "api/v1/protocolids/{start}/{quantity}",
+                defaults: new { controller = "Protocols", action = "GetListIds", start = RouteParameter.Optional, quantity = RouteParameter.Optional }
+            );
 
+            config.Routes.MapHttpRoute(
+                name: "ProtocolCount",
+                routeTemplate: "api/v1/protocolcount",
+                defaults: new { controller = "Protocols", action = "GetListCount" }
+            );
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
             // To avoid processing unexpected or malicious queries, use the validation settings on QueryableAttribute to validate incoming queries.
