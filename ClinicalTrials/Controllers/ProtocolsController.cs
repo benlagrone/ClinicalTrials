@@ -23,7 +23,7 @@ namespace ClinicalTrials.Controllers
         {
             var results = _repo.GetProtocols();
             if (protocolId!=0){
-                var singleProtocols = results.Where(t => t.Id == protocolId);
+                var singleProtocols = results.Where(t => t.Id == protocolId);  
                 return singleProtocols;  
             } else {
                 var allProtocols = results;

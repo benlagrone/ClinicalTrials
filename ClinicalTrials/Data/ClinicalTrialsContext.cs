@@ -27,7 +27,5 @@ namespace ClinicalTrials.Data
         public DbSet<Protocol> Protocols { get; set; }
         public DbSet<ProtocolFormElementOption> ProtocolFormElementOptions { get; set; }
         public DbSet<FormElementOption> FormElementOptions { get; set; }
-
-        public System.Data.Entity.DbSet<ClinicalTrials.Data.ProtocolIdStub> ProtocolIdStubs { get; set; }
     }
 }
