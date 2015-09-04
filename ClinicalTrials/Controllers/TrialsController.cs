@@ -21,8 +21,15 @@ namespace ClinicalTrials.Controllers
         // GET: Trials
         public ActionResult Index(int protocolId = 0, bool includeFullProtocol = false)
         {
-            IEnumerable<Protocol> pcol = _apiController.Get(protocolId, includeFullProtocol);
-            return View(pcol);
+            if (protocolId == 0)
+            {
+                return RedirectToAction("GetList", new { start = 0, count = 50 });
+            }
+            else
+            {
+                IEnumerable<Protocol> pcol = _apiController.Get(protocolId, includeFullProtocol);
+                return View(pcol);
+            }
         }
 
         // GET: single trial
