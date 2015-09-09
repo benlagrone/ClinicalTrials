@@ -32,6 +32,12 @@ namespace ClinicalTrials.Controllers
             
         }
 
+        public IEnumerable<Protocol> GetById(string trialId)
+        {
+            var results = _repo.GetProtocols();
+            return results.Where(t => t.ProtocolId == trialId);
+        }
+
         public IEnumerable<ProtocolIdStub> GetListIds(int start = 0, int quantity = -1)
         {
             var results = _repo.GetProtocols();

@@ -72,7 +72,13 @@ namespace ClinicalTrials
             config.Routes.MapHttpRoute(
                 name: "Protocols",
                 routeTemplate: "api/v1/protocols/{protocolId}/{id}",
-                defaults: new {controller = "Protocols", action = "Get", id = RouteParameter.Optional }
+                defaults: new { controller = "Protocols", action = "Get", id = RouteParameter.Optional }
+            );
+            
+            config.Routes.MapHttpRoute(
+                name: "ProtocolById",
+                routeTemplate: "api/v1/protocolbyid/{trialId}",
+                defaults: new { controller = "Protocols", action = "GetById" }
             );
 
             config.Routes.MapHttpRoute(
