@@ -25,12 +25,12 @@ jQuery(".prettyphoto").prettyPhoto({
 // cache container
 var $container = $('#portfolio,#portfolio-big');
 // initialize isotope
-$container.isotope();
+//CPC - $container.isotope();
 
 // filter items when filter link is clicked
 $('#filters a').click(function(){
 	var selector = $(this).attr('data-filter');
-	$container.isotope({ filter: selector });
+	//CPC - $container.isotope({ filter: selector });
 	return false;
 });               
 
