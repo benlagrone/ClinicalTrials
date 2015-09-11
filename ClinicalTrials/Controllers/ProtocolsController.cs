@@ -32,6 +32,12 @@ namespace ClinicalTrials.Controllers
             
         }
 
+        public IEnumerable<Protocol> GetById(string trialId)
+        {
+            var results = _repo.GetProtocols();
+            return results.Where(t => t.ProtocolId == trialId);
+        }
+
         public IEnumerable<ProtocolIdStub> GetListIds(int start = 0, int quantity = -1)
         {
             var results = _repo.GetProtocols();
@@ -52,6 +58,24 @@ namespace ClinicalTrials.Controllers
         {
             var results = _repo.GetProtocols();
             return results.Count();
+        }
+
+        public IEnumerable<Protocol> GetList(int start = 0, int quantity = -1)
+        {
+            var results = this.Get();
+            var someResults = (from r in results
+                                   select r).OrderBy(r => r.Id);
+            /*IQueryable<Protocol> idResults = (from r in results
+                             select new ProtocolIdStub { Id = r.Id, ProtocolId = r.ProtocolId, NCTNum = r.NCTNum, NCTNum_1 = r.NCTNum_1 }
+                             ).OrderBy(r => r.Id);*/
+            if (quantity != -1)
+            {
+                return results.Skip(start * quantity).Take(quantity);
+            }
+            else
+            {
+                return results;
+            }
         }
     }
 }

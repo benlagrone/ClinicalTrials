@@ -1,0 +1,315 @@
+﻿@model ClinicalTrials.Data.Protocol
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details for @Html.DisplayFor(model => Model.ProtocolId)</title>
+    <meta name="isClinicalTrial" value="true"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.Id)" value="@Html.DisplayFor(model => model.Id)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ProtocolId)" value="@Html.DisplayFor(model => model.ProtocolId)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.NCTNum)" value="@Html.DisplayFor(model => model.NCTNum)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.NCTNum_1)" value="@Html.DisplayFor(model => model.NCTNum_1)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ptitle)" value="@Html.DisplayFor(model => model.ptitle)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.display4)" value="@Html.DisplayFor(model => model.display4)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.display2)" value="@Html.DisplayFor(model => model.display2)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.display6)" value="@Html.DisplayFor(model => model.display6)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.protocol_desc)" value="@Html.DisplayFor(model => model.protocol_desc)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.disease)" value="@Html.DisplayFor(model => model.disease)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.phase)" value="@Html.DisplayFor(model => model.phase)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.agents)" value="@Html.DisplayFor(model => model.agents)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.location)" value="@Html.DisplayFor(model => model.location)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.l_stay)" value="@Html.DisplayFor(model => model.l_stay)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.sponsor)" value="@Html.DisplayFor(model => model.sponsor)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.retrn_visit)" value="@Html.DisplayFor(model => model.retrn_visit)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.home_care)" value="@Html.DisplayFor(model => model.home_care)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ch_name)" value="@Html.DisplayFor(model => model.ch_name)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ch_dept)" value="@Html.DisplayFor(model => model.ch_dept)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ch_phone)" value="@Html.DisplayFor(model => model.ch_phone)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.refer_phone)" value="@Html.DisplayFor(model => model.refer_phone)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ProtObj)" value="@Html.DisplayFor(model => model.ProtObj)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ProtObjText)" value="@Html.DisplayFor(model => model.ProtObjText)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.regDate)" value="@Html.DisplayFor(model => model.regDate)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.irbappDate)" value="@Html.DisplayFor(model => model.irbappDate)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.NCIStudyType)" value="@Html.DisplayFor(model => model.NCIStudyType)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.RecruitStat)" value="@Html.DisplayFor(model => model.RecruitStat)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ProjAccrual)" value="@Html.DisplayFor(model => model.ProjAccrual)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.inclusion)" value="@Html.DisplayFor(model => model.inclusion)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.exclusion)" value="@Html.DisplayFor(model => model.exclusion)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.Link)" value="@Html.DisplayFor(model => model.Link)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.LinkText)" value="@Html.DisplayFor(model => model.LinkText)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.Results)" value="@Html.DisplayFor(model => model.Results)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.ResultsText)" value="@Html.DisplayFor(model => model.ResultsText)"/>
+    <meta name="CT_@Html.DisplayNameFor(model => model.testField)" value="@Html.DisplayFor(model => model.testField)"/>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtocolId)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ProtocolId)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NCTNum)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.NCTNum)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NCTNum_1)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.NCTNum_1)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ptitle)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ptitle)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.display4)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.display4)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.display2)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.display2)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.display6)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.display6)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.protocol_desc)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.protocol_desc)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.disease)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.disease)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.phase)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.phase)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.agents)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.agents)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.location)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.location)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.l_stay)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.l_stay)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.sponsor)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.sponsor)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.retrn_visit)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.home_care)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.home_care)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ch_name)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ch_name)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ch_dept)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ch_dept)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ch_phone)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ch_phone)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.refer_phone)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.refer_phone)
+            </td>
+        </tr>
+        <!--<tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtObj)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ProtObj)
+            </td>
+        </tr>-->
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtObjText)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ProtObjText)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.regDate)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.regDate)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.irbappDate)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.irbappDate)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NCIStudyType)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.NCIStudyType)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RecruitStat)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.RecruitStat)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjAccrual)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ProjAccrual)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.inclusion)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.inclusion)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.exclusion)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.exclusion)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Link)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Link)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LinkText)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.LinkText)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Results)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Results)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultsText)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.ResultsText)
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

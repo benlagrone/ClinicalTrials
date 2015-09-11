@@ -1,0 +1,233 @@
+﻿@model IEnumerable<ClinicalTrials.Data.Protocol>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+        <title>Clinical Trials</title>
+    </head>
+<body>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtocolId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NCTNum_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ptitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.display4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.display2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.display6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.protocol_desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.disease)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.agents)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.l_stay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sponsor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.retrn_visit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.home_care)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ch_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ch_dept)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ch_phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.refer_phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtObj)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtObjText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.regDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.irbappDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NCIStudyType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecruitStat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjAccrual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.inclusion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.exclusion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NCTNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Link)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LinkText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Results)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultsText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.testField)
+            </th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProtocolId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NCTNum_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ptitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.display4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.display2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.display6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.protocol_desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.disease)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.agents)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.l_stay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sponsor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.retrn_visit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.home_care)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ch_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ch_dept)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ch_phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.refer_phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProtObj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProtObjText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.regDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.irbappDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NCIStudyType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecruitStat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjAccrual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.inclusion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.exclusion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NCTNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Link)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Results)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultsText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.testField)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id=item.Id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
