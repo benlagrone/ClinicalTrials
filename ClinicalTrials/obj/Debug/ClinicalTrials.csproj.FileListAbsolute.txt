@@ -205,4 +205,3 @@ C:\sync\ClinicalTrials\ClinicalTrials\obj\Debug\ClinicalTrials.pdb
 C:\sync\ClinicalTrials\ClinicalTrials\bin\ClinicalTrials.dll.config
 C:\sync\ClinicalTrials\ClinicalTrials\bin\ClinicalTrials.dll
 C:\sync\ClinicalTrials\ClinicalTrials\bin\ClinicalTrials.pdb
-C:\sync\ClinicalTrials\ClinicalTrials\obj\Debug\ClinicalTrials.csprojResolveAssemblyReference.cache
